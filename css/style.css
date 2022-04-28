@@ -1,0 +1,471 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #050507;
+  font-family: 'Klee One', cursive;
+  font-weight: 300;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+li {
+  list-style: none;
+}
+
+h2 {
+font-family: 'Kiwi Maru', serif;
+}
+
+.site-title {
+  font-size: 6.25rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin: 100px 0;
+}
+.section-title {
+  border-bottom: solid 1px #fff;
+  display: inline-block;
+  font-size: 3.75rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin-bottom: 45px;
+}
+.wrapper {
+  max-width: 800px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.container {
+  background: #050507;
+  color: #fff;
+  text-align: center;
+}
+
+/*-------------------------------------------
+Global navigation
+-------------------------------------------*/
+/*以下ドロワーメニュー*/
+
+.gnav {
+background-color: black;
+background-image:radial-gradient(#e54328 4%, transparent 4%), radial-gradient(#e54328 4%, transparent 4%);
+background-size: 16px 16px;
+background-repeat: repeat;
+background-position: 0 0 ,8px 8px;
+position: fixed;
+left: 0;
+top: -100%;
+width: 100%;
+height: 100%;
+box-sizing: border-box;
+padding: 20px;
+overflow: auto;
+transition: all .4s ease;
+z-index: 50;
+}
+
+.gnav.show {
+top: 0;
+}
+
+.gnav ul {
+margin-top: 60px;
+position: relative;
+}
+.gnav ul li { margin-top: 30px; }
+.gnav ul li a {
+font-family: 'Kiwi Maru', serif;
+display: block;
+text-align: center;
+color: #008080;
+text-decoration: none;
+font-size: 150%;
+padding: 15px 10px;
+width: 200px;
+margin: 0 auto;
+}
+
+.gnav ul li a:hover {
+color: #e54328;
+}
+
+
+.gnav_deco {
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 30;
+}
+
+.gnav_footer {
+position: absolute;
+bottom: 0;
+height: 64px;
+width: 100%;
+background-color: black;
+}
+
+/*ここまで*/
+
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+
+#mainvisual {
+background:
+url("../img/grass_deco.svg") left bottom / 80px auto repeat-x,
+
+  repeating-linear-gradient(
+    90deg,
+    #33cccc ,
+    transparent 1px,
+    transparent 12px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    #33cccc ,
+    #fff 1px,
+    #fff 12px
+  );
+	
+	
+height: 100vh;
+position: relative;
+}
+
+#mainvisual .main_tit {
+margin: 0 auto;
+padding: 80px 0 36px;
+}
+
+#mainvisual .main_date {
+margin: 0 auto;
+padding: 0 0 80px;
+}
+
+#mainvisual .sab_tit {
+position: absolute;
+right: 80px;
+top: 120px;
+width: 80px;
+height: 234px;
+background-image: url("../img/subtit_light.png");
+}
+
+#mainvisual .sab_tit:hover{
+background-image: url("../img/subtit_dark.png");
+}
+
+#mainvisual .hamburger {
+right: 80px;
+top: 40px;
+width: 48px;
+height: 48px;
+background-color: #e54328;
+position: fixed;
+z-index: 100;
+}
+
+#mainvisual .hamburger span {
+display: block;
+width: 36px;
+height: 2px;
+background-color: #fff;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: all .5s ease;
+}
+
+#mainvisual .hamburger span:first-child { top: 30%; }
+#mainvisual .hamburger span:nth-child(2) { top: 50%; }
+#mainvisual .hamburger span:last-child { top: 70%; }
+
+#mainvisual .hamburger.close span:first-child { top: 50%; transform: translate(-50%, -50%) rotate(45deg);}
+#mainvisual .hamburger.close span:nth-child(2) { transform: translate(-50%, -50%) rotate(405deg); opacity: 0;}
+#mainvisual .hamburger.close span:last-child { top: 50%; transform: translate(-50%, -50%) rotate(-45deg);}
+
+
+#mainvisual .slider {
+  bottom: 0;
+  max-width: 410;
+	margin: 0 auto;
+	padding-top: 5%;
+}
+
+#mainvisual .slider li img {
+margin: 0 50px;
+width: auto;
+height: auto;
+}
+
+#mainvisual .btn {
+	position: relative;
+/*width: 100%;*/
+	height: 410px;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#mainvisual .btn a {
+display: block;
+}
+
+#mainvisual .btn img {
+	position: absolute;
+	max-width: 100%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: block;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+#mainvisual .btn:hover img:nth-of-type(2) {
+	opacity: 0;
+}
+
+/*-------------------------------------------
+about
+-------------------------------------------*/
+.site-about {
+	width: 100%;
+	height: 800px;
+	line-height: 4em;
+	padding: 0 80px;
+	background-color: #E54328;
+	background-image:
+	url("../img/About_decoration.png"),
+  repeating-linear-gradient(
+    90deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    transparent 1px,
+    transparent 12px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    #E54328 1px,
+    #E54328 12px
+  );
+	background-position: center;
+}
+
+.site-about_title {
+	font-size: 53px;
+	padding-top: 91px;
+	color: #008080;
+}
+
+.site-about_text {
+	margin-top: 136px;
+	color: #000;
+	font-size: 28px;
+}
+
+
+
+/*-------------------------------------------
+Information
+-------------------------------------------*/
+.site-info {
+	width: 100%;
+	height: 800px;
+	padding: 0 80px;
+	background-color: #E54328;
+	background-image:
+	url("../img/Infomation_decoration.png"),
+  repeating-linear-gradient(
+    90deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    transparent 1px,
+    transparent 12px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    #E54328 1px,
+    #E54328 12px
+  );
+	background-position: center;
+}
+
+.site-info_title {
+	font-size: 53px;
+	padding-top: 91px;
+	color: #008080;
+}
+
+.site-info_date {
+	margin-top: 102px;
+	font-size: 26px;
+	color: #000;
+}
+
+.site-info_sub-title {
+	font-size: 36px;
+	color: #000;
+}
+
+.site-info_text {
+	font-size: 24px;
+	color: #000;
+	line-height: 2;
+	margin-top: 10px;
+}
+
+/*-------------------------------------------
+Access
+-------------------------------------------*/
+.site-access {
+	width: 100%;
+	height: 800px;
+	background-color: #E54328;
+	background-image:
+	url("../img/Access_decoration.png"),
+  repeating-linear-gradient(
+    90deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    transparent 1px,
+    transparent 12px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    #E54328 1px,
+    #E54328 12px
+  );
+	background-position: center;
+}
+
+.site-access_title {
+	font-size: 53px;
+	padding-top: 91px;
+	color: #008080;
+}
+
+.site-access_map {
+	margin-top: 52px;
+	opacity: 0.9;
+}
+
+.site-access_sub-title {
+	margin: 20px 0 8px ;
+	color: #000;
+	font-size: 20px;
+}
+
+.site-access_address {
+	color: #000;
+}
+
+.site-access_info {
+	color: #000;
+	margin-top: 8px;
+	display: flex;
+	justify-content: center;
+	gap: 0 18px;
+}
+
+.dot {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background:
+url("../img/dot.png") left bottom / 80px auto repeat-x;
+	top: 99px;
+}
+
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+
+
+.site-contact {
+  width: 100%;
+	height: 720px;
+	background-image:radial-gradient(#e54328 6%, transparent 6%), radial-gradient(#e54328 6%, transparent 6%);
+	background-size: 16px 16px;
+	background-repeat: repeat;
+	background-position: 0 0 ,8px 8px;
+}
+
+.site-contact_title {
+	font-size: 53px;
+	padding-top: 91px;
+	color: #008080;
+}
+
+.twitter-icon {
+	margin-top: 106px;
+}
+
+.site-contact_btns {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 42px 0;
+	margin-top: 42px;
+}
+
+.site-contact_btn {
+  width: 380px;
+	height: 75px;
+  border: solid 1px #E54328;
+  padding: 17px 44px;
+	font-size: 24px;
+	background-color: #000;
+	color: #E54328;
+}
+
+.site-contact_btn:hover {
+	background-color: #E54328;
+	color: #000;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+
+footer {
+	width: 100%;
+	height: 80px;
+	background-image:radial-gradient(#e54328 4%, transparent 4%), radial-gradient(#e54328 4%, transparent 4%);
+	background-size: 16px 16px;
+	background-repeat: repeat;
+	background-position: 0 0 ,8px 8px;
+}
+
+.copy {
+	color: #E54328;
+}
+
+#pageup {
+width: 108px;
+height: 223px;
+position: fixed;
+right: 40px;
+bottom: 40px;
+cursor: pointer;
+z-index: 10;
+}
