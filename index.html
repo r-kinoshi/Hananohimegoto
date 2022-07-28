@@ -53,54 +53,63 @@
 					</ul>
         </div>
 
-        <!-- about -->
-				<div class="site-about" id="site-about">
-					<h2 class="site-about_title">ABOUT</h2>
+<div class="site-wrap">
+
+
+  <!-- about -->
+				<section class="site-about" id="site-about">
+					<h1 class="site-about_title">ABOUT</h2>
 					<div class="site-about_text">お花たちは、可愛い。<br>
 						しかし、誰にも言えない秘密があった。<br>
 						見た目から想像できただろうか。<br>
 						裏の顔を持つ99人の彼女たちをご覧あれ。
 					</div>
-				</div>
-
-
-        <!-- Information -->
-        <section class="site-info" id="site-info">
-          <h2 class="site-info_title">INFORMATION</h2>
-					<div class="site-info_date">2022.2.26(SAT) - 3.27(SUN)</div>
-					<h2 class="site-info_sub-title">PLAY!MUSEUM</h2>
-					<div class="site-info_text">
-						平日 10:00 - 17:00(入場は16:20まで) <br>
-						休日 10:00 - 18:00(入場は17:30まで) <br>
-						入場料：一般1500円 / 小・中高校生700円
-					</div>
-        </section>
-
-        <!-- Access -->
-        <section class="site-access" id="site-access">
-          <h2 class="site-access_title">ACCESS</h2>
-					<iframe class="site-access_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.920936563915!2d139.40952736498983!3d35.703563180189064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e1d0f71028e3%3A0xd3f16ea36f0834b9!2sPLAY*21!5e0!3m2!1sja!2sjp!4v1645524454738!5m2!1sja!2sjp" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-					<h2 class="site-access_sub-title">PLAY!MUSEUM</h2>
-					<div class="site-access_address">
-						〒190-0014 <br>
-						東京都立川市緑町３−１ GREEN SPRINGS W3
-					</div>
-					<div class="site-access_info">
-						<div class="site-access_info-left">
-							TEL：043-518-9625
-						</div>
-						<div class="site-access_info-right">
-							Mail：info@play2020.jp
-						</div>
-					</div>
-					<div class="dot"></div>
 				</section>
+  
+  
+  <!-- Information -->
+  <section class="site-info" id="site-info">
+    <h1 class="site-info_title">INFORMATION</h2>
+    <div class="sp_info">
+      <div class="site-info_date">2022.2.26(SAT) - 3.27(SUN)</div>
+      <h2 class="site-info_sub-title">PLAY!MUSEUM</h2>
+      <div class="site-info_text">
+        平日 10:00 - 17:00(入場は16:20まで) <br>
+        休日 10:00 - 18:00(入場は17:30まで) <br>
+        入場料：一般1500円 / 小・中高校生700円
+        </div>
+      </div>
+  </section>
+  
+  <!-- Access -->
+  <section class="site-access" id="site-access">
+    <h1 class="site-access_title">ACCESS</h2>
+    <iframe class="site-access_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.920936563915!2d139.40952736498983!3d35.703563180189064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e1d0f71028e3%3A0xd3f16ea36f0834b9!2sPLAY*21!5e0!3m2!1sja!2sjp!4v1645524454738!5m2!1sja!2sjp" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <h2 class="site-access_sub-title">PLAY!MUSEUM</h2>
+    <div class="site-access_address">
+      〒190-0014 <br>
+      東京都立川市緑町３−１ GREEN SPRINGS W3
+      </div>
+    <div class="site-access_info">
+      <div class="site-access_info-left">
+        TEL：043-518-9625
+        </div>
+      <div class="site-access_info-right">
+        Mail：info@play2020.jp
+        </div>
+      </div>
+    <div class="dot"></div>
+  </section>
 
-        <!-- Contact -->
+
+</div>
+
+
+<!-- Contact -->
         <section class="site-contact" id="site-contact">
           <h2 class="site-contact_title">CONTACT</h2>
 					<div class="twitter-icon">
-						<a href="https://twitter.com/PLAY_2020" target="_blank"><img src="../img/twitter.svg" alt=""></a>
+						<a href="https://twitter.com/PLAY_2020" target="_blank"><img src="img/twitter.svg" alt=""></a>
 					</div>
 					<div class="site-contact_btns">
 						<a class="site-contact_btn" href="#">出展に関するお問い合わせ</a>
@@ -121,7 +130,7 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="js/smoothScroll.js"></script>
 <script type="text/javascript" src="js/drawer.js"></script>
-<!--<script type="text/javascript" src="js/pageup.js"></script>-->
+<script type="text/javascript" src="js/pageup.js"></script>
     
 
 <script>
@@ -143,7 +152,6 @@ $('.slider').slick({
     {
       breakpoint: 600,
       settings: {
-				arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1
       }
@@ -162,9 +170,11 @@ $(function(){
  
   //ボタンの表示設定
   $(window).scroll(function(){
-    if($(this).scrollTop()>2500){
+    if($(this).scrollTop()>2000){
       //---- 画面を800pxスクロールしたら、ボタンを表示する
       topBtn.fadeIn();
+      
+    
     }else{
       //---- 画面が800pxより上なら、ボタンを表示しない
       topBtn.fadeOut();
@@ -172,6 +182,8 @@ $(function(){
   }); 
 });
   </script>
+    
+    
 <script>
 $(function(){
     var topBtn=$('#pageup');
@@ -183,15 +195,20 @@ $(function(){
   });
 });
   </script>
+    
+    
 <script>
 	$(function(){
 		$(".btn").hover(function() {
-			$("#mainvisual").css("background", "url('img/grass_deco_dark.svg') left bottom / 80px auto repeat-x, repeating-linear-gradient(90deg,#004444, transparent 1px, transparent 12px), repeating-linear-gradient(0deg,#004444, #000 1px, #000 12px)");
+
+			$("#mainvisual").css("background", "url('img/grass_deco_dark.svg') left bottom / 58px auto repeat-x, repeating-linear-gradient(90deg,#004444, transparent 1px, transparent 12px), repeating-linear-gradient(0deg,#004444, #000 1px, #000 12px)");
 		});
 		$(".btn").mouseleave(function() {
-			$("#mainvisual").css("background", "url('img/grass_deco.svg') left bottom / 80px auto repeat-x, repeating-linear-gradient(90deg,#33cccc, transparent 1px, transparent 12px), repeating-linear-gradient(0deg,#33cccc, #fff 1px, #fff 12px)");
+			$("#mainvisual").css("background", "url('img/grass_deco.svg') left bottom / 58px auto repeat-x, repeating-linear-gradient(90deg,#33cccc, transparent 1px, transparent 12px), repeating-linear-gradient(0deg,#33cccc, #fff 1px, #fff 12px)");
 		});
 	});
 </script>
+    
+    
   </body>
 </html>

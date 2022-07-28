@@ -4,9 +4,9 @@ html {
   font-size: 100%;
 }
 body {
-  color: #050507;
   font-family: 'Klee One', cursive;
-  font-weight: 300;
+  text-align: center;
+  background-color: black;
 }
 a {
   color: #fff;
@@ -20,33 +20,36 @@ li {
   list-style: none;
 }
 
-h2 {
-font-family: 'Kiwi Maru', serif;
+h1 {
+  font-family: 'Kiwi Maru', serif;
+  font-size: 53px;
+  color: #008080;
 }
 
-.site-title {
-  font-size: 6.25rem;
-  font-weight: 300;
-  letter-spacing: 0.03em;
-  margin: 100px 0;
-}
-.section-title {
-  border-bottom: solid 1px #fff;
-  display: inline-block;
-  font-size: 3.75rem;
-  font-weight: 300;
-  letter-spacing: 0.03em;
-  margin-bottom: 45px;
-}
 .wrapper {
   max-width: 800px;
   padding: 0 30px;
   margin: 0 auto;
 }
-.container {
-  background: #050507;
-  color: #fff;
-  text-align: center;
+
+
+.site-wrap {
+  background-color: #E54328;
+	background-image:
+  repeating-linear-gradient(
+    90deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    transparent 1px,
+    transparent 12px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    #E54328 1px,
+    #E54328 12px
+  );
 }
 
 /*-------------------------------------------
@@ -66,7 +69,7 @@ top: -100%;
 width: 100%;
 height: 100%;
 box-sizing: border-box;
-padding: 20px;
+padding: 20px 0;
 overflow: auto;
 transition: all .4s ease;
 z-index: 50;
@@ -88,7 +91,7 @@ text-align: center;
 color: #008080;
 text-decoration: none;
 font-size: 150%;
-padding: 15px 10px;
+padding: 22px 10px;
 width: 200px;
 margin: 0 auto;
 }
@@ -127,15 +130,16 @@ url("../img/grass_deco.svg") left bottom / 80px auto repeat-x,
 
   repeating-linear-gradient(
     90deg,
-    #33cccc ,
+    #68cccc ,
     transparent 1px,
     transparent 12px
   ),
   repeating-linear-gradient(
     0deg,
-    #33cccc ,
+    #68cccc ,
     #fff 1px,
     #fff 12px
+	
   );
 	
 	
@@ -247,35 +251,18 @@ about
 	height: 800px;
 	line-height: 4em;
 	padding: 0 80px;
-	background-color: #E54328;
 	background-image:
-	url("../img/About_decoration.png"),
-  repeating-linear-gradient(
-    90deg,
-    rgba(0,128,128,0.5) ,
-    rgba(0,128,128,0.5) 1px,
-    transparent 1px,
-    transparent 12px
-  ),
-  repeating-linear-gradient(
-    0deg,
-    rgba(0,128,128,0.5) ,
-    rgba(0,128,128,0.5) 1px,
-    #E54328 1px,
-    #E54328 12px
-  );
+	url("../img/About_decoration.png");
 	background-position: center;
 }
 
 .site-about_title {
 	font-size: 53px;
 	padding-top: 91px;
-	color: #008080;
 }
 
 .site-about_text {
 	margin-top: 136px;
-	color: #000;
 	font-size: 28px;
 }
 
@@ -288,23 +275,8 @@ Information
 	width: 100%;
 	height: 800px;
 	padding: 0 80px;
-	background-color: #E54328;
 	background-image:
-	url("../img/Infomation_decoration.png"),
-  repeating-linear-gradient(
-    90deg,
-    rgba(0,128,128,0.5) ,
-    rgba(0,128,128,0.5) 1px,
-    transparent 1px,
-    transparent 12px
-  ),
-  repeating-linear-gradient(
-    0deg,
-    rgba(0,128,128,0.5) ,
-    rgba(0,128,128,0.5) 1px,
-    #E54328 1px,
-    #E54328 12px
-  );
+	url("../img/Infomation_decoration.png");
 	background-position: center;
 }
 
@@ -321,6 +293,7 @@ Information
 }
 
 .site-info_sub-title {
+  font-family: 'Kiwi Maru', serif;
 	font-size: 36px;
 	color: #000;
 }
@@ -370,6 +343,7 @@ Access
 }
 
 .site-access_sub-title {
+  font-family: 'Kiwi Maru', serif;
 	margin: 20px 0 8px ;
 	color: #000;
 	font-size: 20px;
@@ -389,11 +363,11 @@ Access
 
 .dot {
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	position: relative;
 	background:
 url("../img/dot.png") left bottom / 80px auto repeat-x;
-	top: 99px;
+	top: 125px;
 }
 
 /*-------------------------------------------
@@ -468,4 +442,344 @@ right: 40px;
 bottom: 40px;
 cursor: pointer;
 z-index: 10;
+}
+
+
+
+@media screen and (max-width: 520px){
+
+#mainvisual {
+background:
+url("../img/grass_deco.svg") left bottom / 50px auto repeat-x,
+
+  repeating-linear-gradient(
+    90deg,
+    #68cccc ,
+    transparent 1px,
+    transparent 12px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    #68cccc ,
+    #fff 1px,
+    #fff 12px
+  );
+height: 100vh;
+width: 100%;
+position: relative;
+}
+
+#mainvisual .main_tit {
+width: 320px;
+margin: 0 auto;
+padding: 80px 0 0 0 ;
+}
+
+#mainvisual .main_date {
+width: 160px;
+margin: 0 auto;
+padding: 20px 0 0 0;
+}
+
+#mainvisual .sab_tit {
+position: absolute;
+right: 40%;
+transform: scale(0.7,0.7);
+top: 140px;	
+background-image: url("../img/subtit_light.png");
+	
+}
+
+
+#mainvisual .sab_tit :hover{
+background-image: url("../img/subtit_dark.png");
+}
+
+	
+	
+	
+
+#mainvisual .hamburger {
+right: 20px;
+top: 20px;
+width: 40px;
+height: 40px;
+background-color: #e54328;
+position: fixed;
+z-index: 100;
+}
+
+#mainvisual .hamburger span {
+display: block;
+width: 28px;
+height: 2px;
+background-color: #fff;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: all .5s ease;
+}
+
+#mainvisual .hamburger span:first-child { top: 30%; }
+#mainvisual .hamburger span:nth-child(2) { top: 50%; }
+#mainvisual .hamburger span:last-child { top: 70%; }
+
+#mainvisual .hamburger.close span:first-child { top: 50%; transform: translate(-50%, -50%) rotate(45deg);}
+#mainvisual .hamburger.close span:nth-child(2) { transform: translate(-50%, -50%) rotate(405deg); opacity: 0;}
+#mainvisual .hamburger.close span:last-child { top: 50%; transform: translate(-50%, -50%) rotate(-45deg);}
+
+
+#mainvisual .slider {
+  width: 100%;
+  bottom: 0;
+	margin: 0 auto;
+	padding-top: 120px;
+}
+
+#mainvisual .slider li img {
+margin: 0 50px;
+width: 60%;
+height: auto;
+}
+
+#mainvisual .btn {
+	position: relative;
+	height: 410px;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#mainvisual .btn a {
+display: block;
+}
+
+#mainvisual .btn img {
+	position: absolute;
+	max-width: 100%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: block;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+#mainvisual .btn:hover img:nth-of-type(2) {
+	opacity: 0;
+}  
+  
+  
+  
+/*-------------------------------------------
+スマホ用アバウトページ
+-------------------------------------------*/
+.site-about {
+	height: 100vh;
+	line-height: 2em;
+	padding: 20% 0;
+	background-image:
+	url("../img/SP_about_deco.png");
+  background-position: 50% 40%;
+  position: relative;
+}
+
+.site-about_title {
+	padding-top: 0;
+	font-size: 2em;
+	
+}
+
+
+.site-about_text {
+  margin: 0 auto 20% auto;
+  font-size: 2em;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  white-space: nowrap;
+  }
+
+/*-------------------------------------------
+スマホ用インフォメーションページ
+-------------------------------------------*/
+.site-info {
+	height: 100vh;
+	padding: 20% 0;
+	background-image:
+	url("../img/SP_info_deco.png");
+  background-position: 50% 40%;
+  position: relative;
+}
+
+.site-info_title {
+	font-size: 2em;
+	padding-top: 0;
+}
+
+  .sp_info {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  }
+
+.site-info_date {
+	margin-top: 0;
+	font-size: 1.2em;
+}
+
+.site-info_sub-title {
+	font-size: 1.6em;
+}
+
+.site-info_text {
+  line-height: 2;
+  margin: 5% 0 20% 0;
+  font-size: 1em;
+  white-space: nowrap;
+}  
+  
+
+/*-------------------------------------------
+スマホ用アバウトページ
+-------------------------------------------*/
+.site-about {
+	height: 100vh;
+	line-height: 2em;
+	padding: 20% 0;
+	background-image:
+	url("../img/SP_about_deco.png");
+  background-position: 50% 40%;
+  position: relative;
+}
+
+.site-about_title {
+	padding-top: 0;
+	font-size: 2em;
+}
+
+
+.site-about_text {
+  margin: 0 auto 20% auto;
+  font-size: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  white-space: nowrap;
+  }
+	
+	
+	
+	
+
+/*-------------------------------------------
+スマホ用アクセスページ
+-------------------------------------------*/
+.site-access {
+  padding: 20% 0;
+/*	width: 100%;*/
+	height: 100vh;
+  	background-image:
+  repeating-linear-gradient(
+    90deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    transparent 1px,
+    transparent 12px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    #E54328 1px,
+    #E54328 12px
+  );
+  position: relative;
+}
+
+.site-access_title {
+	padding-top: 0;
+	font-size: 2em;
+}
+
+.site-access_map {
+  width: 250px;
+  height: 250px;
+	margin-top: 15%;
+	opacity: 0.9;
+}
+
+.site-access_sub-title {
+	margin: 5% 0 2.5% ;
+	color: #000;
+}
+
+
+.site-access_info {
+	margin-top: 30%;
+	display: block;
+}
+
+/*-------------------------------------------
+スマホ用ドットデコレーション
+-------------------------------------------*/
+.dot {
+/*	width: 100%;*/
+	height: 98vh;
+	position: absolute;
+	background:
+url("../img/SP_dot.png") left bottom / 40px auto repeat-x;
+	bottom: 0;
+  top: 0;
+  transform: translate(0,3%)
+}
+
+/*-------------------------------------------
+スマホ用コンタクトページ
+-------------------------------------------*/
+.site-contact {
+	height: 100vh;
+	background-image:radial-gradient(#e54328 7%, transparent 7%),
+    radial-gradient(#e54328 7%, transparent 7%);
+	background-size: 15px 15px;
+}
+
+.site-contact_title {
+  font-family: 'Kiwi Maru', serif;
+	font-size: 2em;
+	padding-top: 20%;
+}
+
+.twitter-icon {
+  width: 50px;
+  height: auto;
+	margin: 20% auto 0;
+}
+
+.site-contact_btns {
+	margin-top: 10%;
+}
+
+.site-contact_btn {
+  width: 70%;
+	height: auto;
+  padding: 4% 8%;
+	font-size: 1em;
+}
+
+#pageup {
+width: 72px;
+height: auto;
+right: 24px;
+}
+
+footer {
+	height: 50px;
+}
+
 }
